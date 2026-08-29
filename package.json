@@ -1,0 +1,12 @@
+{
+  "name": "canticos-pwa",
+  "version": "1.0.0",
+  "description": "App para escolher c\u00e2nticos",
+  "main": "api/suggest.js",
+  "scripts": {
+    "start": "node api/suggest.js"
+  },
+  "dependencies": {
+    "@google/generativeai": "^0.14.1"
+  }
+}
