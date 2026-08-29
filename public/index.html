@@ -18,66 +18,64 @@
         .loader { display: none; text-align: center; margin: 20px 0; color: #666; font-style: italic; }
         .result { margin-top: 20px; line-height: 1.6; }
         .tema-box { background: #eef5fc; padding: 15px; border-radius: 8px; font-weight: bold; margin-bottom: 20px; border-left: 4px solid #4a90e2; }
+        .song-box { background: #fafafa; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .song-title { font-weight: bold; font-size: 1.1em; color: #2c3e50; margin-bottom: 5px; }
+        .song-reason { color: #555; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Buscador de Cânticos</h1>
-        <p style="text-align:center;">Digite o número do discurso para receber as sugestões.</p>
+        <h1>Buscador de Cânticos (Offline)</h1>
+        <p style="text-align:center;">Digite o número do discurso para ver as opções gravadas.</p>
         <div class="input-group">
             <input type="number" id="numero" placeholder="Ex: 42">
             <button onclick="buscar()">Buscar</button>
         </div>
-        <div class="loader" id="loader">Consultando a IA... aguarde.</div>
         <div class="result" id="result"></div>
     </div>
 
     <script>
-        // Registrar Service Worker para PWA
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js')
                 .then(() => console.log('Service Worker Registrado'))
                 .catch(err => console.error('Erro no SW:', err));
         }
 
-        async function buscar() {
+        let db = null;
+
+        // Carrega o banco de dados localmente ao abrir a página
+        fetch('/db_canticos.json')
+            .then(res => res.json())
+            .then(data => { db = data; })
+            .catch(err => console.error('Erro ao carregar banco:', err));
+
+        function buscar() {
             const num = document.getElementById('numero').value;
             const resultDiv = document.getElementById('result');
-            const loader = document.getElementById('loader');
 
             if (!num) return alert('Digite um número.');
+            if (!db) return alert('Banco de dados ainda carregando... tente novamente em 1 segundo.');
 
             resultDiv.innerHTML = '';
-            loader.style.display = 'block';
 
-            try {
-                const res = await fetch('/api/suggest', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ numero: num })
-                });
+            const discurso = db[num];
 
-                const data = await res.json();
-                loader.style.display = 'none';
-
-                if (!res.ok) {
-                    resultDiv.innerHTML = `<p style="color:red;">Erro: ${data.error}</p>`;
-                    return;
-                }
-
-                // Parse básico de markdown pra HTML (asteriscos, negrito, etc)
-                let htmlFormatado = data.sugestoes
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/\n/g, '<br>');
-
-                resultDiv.innerHTML = `
-                    <div class="tema-box">Tema do Discurso: ${data.tema}</div>
-                    <div>${htmlFormatado}</div>
-                `;
-            } catch (err) {
-                loader.style.display = 'none';
-                resultDiv.innerHTML = `<p style="color:red;">Erro de conexão.</p>`;
+            if (!discurso) {
+                resultDiv.innerHTML = `<p style="color:red;">Erro: Discurso ${num} não encontrado no banco de dados gravado.</p>`;
+                return;
             }
+
+            let html = `<div class="tema-box">Tema do Discurso:<br> ${discurso.tema}</div><h3>Opções de Cânticos:</h3>`;
+            
+            discurso.sugestoes.forEach((song, index) => {
+                html += `
+                <div class="song-box">
+                    <div class="song-title">Opção ${index + 1}: Cântico ${song.numero} - ${song.titulo}</div>
+                    <div class="song-reason">${song.motivo}</div>
+                </div>`;
+            });
+
+            resultDiv.innerHTML = html;
         }
     </script>
 </body>

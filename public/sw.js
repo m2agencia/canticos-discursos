@@ -1,10 +1,10 @@
-
-const CACHE_NAME = 'canticos-v1';
+const CACHE_NAME = 'canticos-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/icon.svg'
+  '/icon.svg',
+  '/db_canticos.json'
 ];
 
 self.addEventListener('install', event => {
@@ -14,9 +14,6 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-  // Ignora chamadas de API do cache
-  if (event.request.url.includes('/api/')) return;
-  
   event.respondWith(
     caches.match(event.request).then(response => {
       return response || fetch(event.request);
