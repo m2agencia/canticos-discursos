@@ -1,1 +1,842 @@
-﻿{}
+{
+  "1": {
+    "tema": "Você Conhece Bem a Deus?",
+    "sugestoes": [
+      {
+        "numero": 2,
+        "titulo": "Teu nome é Jeová",
+        "motivo": "Por que escolher: Destaca o privilégio de levar o nome de Deus e o desejo de que as pessoas o conheçam e o adorem."
+      },
+      {
+        "numero": 88,
+        "titulo": "Os teus caminhos quero entender",
+        "motivo": "Por que escolher: Expressa o desejo sincero de estudar a Bíblia e orar para entender a fundo o modo de pensar de Jeová."
+      }
+    ]
+  },
+  "2": {
+    "tema": "Você Vai Sobreviver aos Últimos Dias?",
+    "sugestoes": [
+      {
+        "numero": 119,
+        "titulo": "Temos que ter fé",
+        "motivo": "Por que escolher: Enfatiza que a fé forte é o escudo indispensável para não ser desviado e para sobreviver ao fim deste sistema."
+      },
+      {
+        "numero": 143,
+        "titulo": "Continue ativo e desperto!",
+        "motivo": "Por que escolher: Incentiva a urgência espiritual, mantendo a vigilância diária diante da proximidade do dia de Jeová."
+      }
+    ]
+  },
+  "3": {
+    "tema": "Você Está Avançando com a Organização Unida de Jeová?",
+    "sugestoes": [
+      {
+        "numero": 101,
+        "titulo": "Servimos a Jeová em união",
+        "motivo": "Por que escolher: Destaca a paz, o amor fraternal e a beleza da adoração unida em nível mundial."
+      },
+      {
+        "numero": 123,
+        "titulo": "Obedecemos a Jeová...",
+        "motivo": "Por que escolher: Foca na submissão humilde e leal à estrutura terrestre e celestial estabelecida por Deus para guiar seu povo."
+      }
+    ]
+  },
+  "4": {
+    "tema": "Que Provas Temos de que Deus Existe?",
+    "sugestoes": [
+      {
+        "numero": 11,
+        "titulo": "A criação dá glória a Jeová",
+        "motivo": "Por que escolher: Baseado no Salmo 19, mostra como o céu e a Terra agem como testemunhas silenciosas do imenso poder do Criador."
+      },
+      {
+        "numero": 1,
+        "titulo": "As qualidades de Jeová",
+        "motivo": "Por que escolher: Exalta as qualidades invisíveis de Deus, como poder, justiça, sabedoria e amor, visíveis em suas obras."
+      }
+    ]
+  },
+  "5": {
+    "tema": "Você Pode Ter uma Família Feliz!",
+    "sugestoes": [
+      {
+        "numero": 131,
+        "titulo": "O que Jeová uniu",
+        "motivo": "Por que escolher: Ideal para destacar a santidade do casamento e o compromisso assumido perante o Criador."
+      },
+      {
+        "numero": 134,
+        "titulo": "Os filhos são uma herança...",
+        "motivo": "Por que escolher: Prepara os pais para a responsabilidade sagrada de educar seus filhos segundo os caminhos de Jeová."
+      }
+    ]
+  },
+  "6": {
+    "tema": "O Dilúvio dos Dias de Noé e Você",
+    "sugestoes": [
+      {
+        "numero": 31,
+        "titulo": "Ande com Deus",
+        "motivo": "Por que escolher: Mostra que, assim como Noé, é possível e necessário andar com modéstia e integridade em meio a um mundo corrompido."
+      },
+      {
+        "numero": 119,
+        "titulo": "Temos que ter fé",
+        "motivo": "Por que escolher: Destaca que a fé prática demonstrada por obras nos protege contra a apatia das pessoas ao nosso redor."
+      }
+    ]
+  },
+  "7": {
+    "tema": "Imite a Misericórdia de Jeová",
+    "sugestoes": [
+      {
+        "numero": 125,
+        "titulo": "‘Felizes os misericordiosos’",
+        "motivo": "Por que escolher: Incentiva diretamente o cultivo da compaixão e da misericórdia ativa nas nossas relações diárias."
+      },
+      {
+        "numero": 130,
+        "titulo": "Vamos perdoar uns aos outros",
+        "motivo": "Por que escolher: Baseia-se no resgate de Cristo para mostrar a importância de perdoar os outros de coração."
+      }
+    ]
+  },
+  "8": {
+    "tema": "Viva para Fazer a Vontade de Deus",
+    "sugestoes": [
+      {
+        "numero": 18,
+        "titulo": "Obrigado pelo resgate!",
+        "motivo": "Por que escolher: Expressa profunda gratidão pelo sacrifício de Jesus, que nos resgatou da escravidão ao pecado herdado."
+      },
+      {
+        "numero": 40,
+        "titulo": "Você já decidiu?",
+        "motivo": "Por que escolher: Desafia cada ouvinte a declarar sua lealdade a Jeová de toda a alma e a viver em adoração exclusiva."
+      }
+    ]
+  },
+  "9": {
+    "tema": "Escute e Faça o que a Bíblia Diz",
+    "sugestoes": [
+      {
+        "numero": 89,
+        "titulo": "Escute, obedeça e seja abençoado",
+        "motivo": "Por que escolher: Perfeita conexão com o Sermão do Monte (Mateus 7:24), comparando a obediência a uma casa construída na rocha."
+      },
+      {
+        "numero": 97,
+        "titulo": "A Palavra de Deus nos ajuda...",
+        "motivo": "Por que escolher: Destaca a Bíblia como o alimento diário do qual necessitamos para guiar nossos passos e pensamentos."
+      }
+    ]
+  },
+  "10": {
+    "tema": "Seja Honesto em Tudo",
+    "sugestoes": [
+      {
+        "numero": 28,
+        "titulo": "Quem pode ser amigo de Jeová?",
+        "motivo": "Por que escolher: Baseado no Salmo 15, lista a honestidade e a verdade no coração como requisitos para a amizade com Deus."
+      },
+      {
+        "numero": 34,
+        "titulo": "Andarei em integridade",
+        "motivo": "Por que escolher: Inspirado no Salmo 26, expressa o voto solene de rejeitar a falsidade e andar de modo inculpe perante Jeová."
+      }
+    ]
+  },
+  "11": {
+    "tema": "Imite a Jesus e Não Faça Parte do Mundo",
+    "sugestoes": [
+      {
+        "numero": 13,
+        "titulo": "Cristo, o nosso exemplo",
+        "motivo": "Por que escolher: Convida a assistência a imitar o estilo de vida simples e focado no Reino de Deus que Jesus demonstrou na Terra."
+      },
+      {
+        "numero": 122,
+        "titulo": "Vamos continuar firmes!",
+        "motivo": "Por que escolher: Encoraja a perseverança e a integridade diante das pressões morais e tentações do sistema mau."
+      }
+    ]
+  },
+  "12": {
+    "tema": "Deus Quer que Você Respeite quem Tem Autoridade",
+    "sugestoes": [
+      {
+        "numero": 123,
+        "titulo": "Obedecemos a Jeová...",
+        "motivo": "Por que escolher: Foca na importância da ordem e submissão aos arranjos que Deus estabeleceu na família e na congregação."
+      },
+      {
+        "numero": 31,
+        "titulo": "Ande com Deus",
+        "motivo": "Por que escolher: Destaca a modéstia necessária para aceitar as orientações divinas e cooperar com quem exerce liderança."
+      }
+    ]
+  },
+  "13": {
+    "tema": "Qual o Ponto de Vista de Deus sobre o Sexo e o Casamento?",
+    "sugestoes": [
+      {
+        "numero": 131,
+        "titulo": "O que Jeová uniu",
+        "motivo": "Por que escolher: Exalta o respeito que os cônjuges devem ter pelo arranjo matrimonial estabelecido no Éden por Deus."
+      },
+      {
+        "numero": 132,
+        "titulo": "Nós somos um",
+        "motivo": "Por que escolher: Expressa o amor terno, romântico e leal que deve unir o marido e a esposa sob as bênçãos de Jeová."
+      }
+    ]
+  },
+  "14": {
+    "tema": "Um Povo Puro e Limpo Honra a Jeová",
+    "sugestoes": [
+      {
+        "numero": 127,
+        "titulo": "Que tipo de pessoa eu devo ser",
+        "motivo": "Por que escolher: Baseia-se em 2 Pedro 3:11, motivando o cristão a manter uma conduta santa e atos de devoção limpos."
+      },
+      {
+        "numero": 34,
+        "titulo": "Andarei em integridade",
+        "motivo": "Por que escolher: Foca no desejo de refinar o coração, evitando companhias e práticas moralmente impuras."
+      }
+    ]
+  },
+  "15": {
+    "tema": "‘Faça o Bem a Todos’",
+    "sugestoes": [
+      {
+        "numero": 116,
+        "titulo": "A força da bondade",
+        "motivo": "Por que escolher: Destaca como a bondade cristã em ação pode acalmar tensões e atrair outros para a adoração verdadeira."
+      },
+      {
+        "numero": 117,
+        "titulo": "A qualidade da bondade",
+        "motivo": "Por que escolher: Pede o espírito de Jeová para que possamos tratar a todos com amor, no lar e no ministério."
+      }
+    ]
+  },
+  "16": {
+    "tema": "Seja Cada Vez Mais Amigo de Jeová",
+    "sugestoes": [
+      {
+        "numero": 28,
+        "titulo": "Quem pode ser amigo de Jeová?",
+        "motivo": "Por que escolher: Perfeito para meditar nos requisitos básicos que Jeová exige daqueles que desejam habitar no seu monte santo."
+      },
+      {
+        "numero": 30,
+        "titulo": "Meu Deus, meu Amigo e Pai",
+        "motivo": "Por que escolher: Dá consolo e segurança, lembrando que Jeová valoriza nossa lealdade e nunca se esquece de nossos esforços."
+      }
+    ]
+  },
+  "17": {
+    "tema": "Glorifique a Deus com Tudo o que Você Tem",
+    "sugestoes": [
+      {
+        "numero": 12,
+        "titulo": "Nosso grandioso Deus, Jeová",
+        "motivo": "Por que escolher: Uma oração cantada que reconhece a soberania de Deus e promete servi-lo de todo o coração e alma."
+      },
+      {
+        "numero": 1,
+        "titulo": "As qualidades de Jeová",
+        "motivo": "Por que escolher: Exalta que Deus é digno de receber toda adoração e glória devido às suas criações e qualidades magníficas."
+      }
+    ]
+  },
+  "18": {
+    "tema": "Faça de Jeová a Sua Fortaleza",
+    "sugestoes": [
+      {
+        "numero": 8,
+        "titulo": "Jeová é um refúgio",
+        "motivo": "Por que escolher: Traz imenso consolo ao lembrar que, sob as asas protetoras de Jeová, o cristão não precisa temer o perigo."
+      },
+      {
+        "numero": 3,
+        "titulo": "Jeová, minha força e esperança",
+        "motivo": "Por que escolher: Expressa confiança ao passar por testes difíceis, pedindo poder e proteção diretamente a Deus."
+      }
+    ]
+  },
+  "19": {
+    "tema": "Como Você Pode Saber Seu Futuro?",
+    "sugestoes": [
+      {
+        "numero": 22,
+        "titulo": "Que venha o Reino de Deus!",
+        "motivo": "Por que escolher: Fortalece a fé na profecia de Daniel 2 sobre o estabelecimento e o governo eterno do Reino de Deus."
+      },
+      {
+        "numero": 145,
+        "titulo": "Deus prometeu um paraíso",
+        "motivo": "Por que escolher: Foca de forma alegre e convicta nas promessas do Novo Mundo que estão garantidas no calendário divino."
+      }
+    ]
+  },
+  "20": {
+    "tema": "Chegou o Tempo de Deus Governar o Mundo?",
+    "sugestoes": [
+      {
+        "numero": 14,
+        "titulo": "O novo Rei da Terra",
+        "motivo": "Por que escolher: Exalta a entronização de Jesus em 1914 e as bênçãos eternas que seu governo já começou a trazer."
+      },
+      {
+        "numero": 23,
+        "titulo": "Jeová começou a reinar!",
+        "motivo": "Por que escolher: Convida a congregação a erguer a voz com entusiasmo para anunciar que o Reino justo de Deus já domina."
+      }
+    ]
+  },
+  "21": {
+    "tema": "Dê Valor ao Seu Lugar no Reino de Deus",
+    "sugestoes": [
+      {
+        "numero": 24,
+        "titulo": "Venham para o monte de Jeová!",
+        "motivo": "Por que escolher: Celebra o cumprimento profético do crescimento mundial do povo de Deus e o privilégio de estar no seu monte."
+      },
+      {
+        "numero": 21,
+        "titulo": "Vou buscar primeiro o Reino",
+        "motivo": "Por que escolher: Ajuda a estabelecer as prioridades certas, colocando os interesses do Reino acima de preocupações materiais."
+      }
+    ]
+  },
+  "23": {
+    "tema": "A Vida Tem Objetivo",
+    "sugestoes": [
+      {
+        "numero": 31,
+        "titulo": "Ande com Deus",
+        "motivo": "Por que escolher: Conecta-se diretamente à conclusão de Eclesiastes 12:13, mostrando que o verdadeiro sentido da vida é servir a Jeová."
+      },
+      {
+        "numero": 11,
+        "titulo": "A criação dá glória a Jeová",
+        "motivo": "Por que escolher: Usa o projeto visível no Universo para refutar a evolução e demonstrar que fomos criados com um propósito."
+      }
+    ]
+  },
+  "24": {
+    "tema": "Você Encontrou “uma Pérola de Grande Valor”?",
+    "sugestoes": [
+      {
+        "numero": 21,
+        "titulo": "Vou buscar primeiro o Reino",
+        "motivo": "Por que escolher: Harmoniza-se com a ilustração da pérola, motivando a fazer qualquer sacrifício pessoal pelo Reino."
+      },
+      {
+        "numero": 35,
+        "titulo": "O que é mais importante",
+        "motivo": "Por que escolher: Ensina a discernir as prioridades da vida e a valorizar a verdade como o maior tesouro de todos."
+      }
+    ]
+  },
+  "25": {
+    "tema": "Lute Contra o Espírito do Mundo",
+    "sugestoes": [
+      {
+        "numero": 119,
+        "titulo": "Temos que ter fé",
+        "motivo": "Por que escolher: Destaca a necessidade de manter a armadura espiritual ajustada para resistir à mentalidade e pressões egoístas."
+      },
+      {
+        "numero": 122,
+        "titulo": "Vamos continuar firmes!",
+        "motivo": "Por que escolher: Dá coragem para sermos diferentes e permanecermos separados dos padrões morais decadentes do mundo."
+      }
+    ]
+  },
+  "26": {
+    "tema": "Você É Importante para Deus?",
+    "sugestoes": [
+      {
+        "numero": 30,
+        "titulo": "Meu Deus, meu Amigo e Pai",
+        "motivo": "Por que escolher: Um cântico profundamente consolador que assegura que Jeová se importa com nossas dores e provações individuais."
+      },
+      {
+        "numero": 4,
+        "titulo": "‘Jeová é o meu Pastor’",
+        "motivo": "Por que escolher: Baseado no Salmo 23, destaca o carinho com que Deus guia, protege e acolhe cada uma de suas ovelhas."
+      }
+    ]
+  },
+  "27": {
+    "tema": "Como Construir um Casamento Feliz",
+    "sugestoes": [
+      {
+        "numero": 131,
+        "titulo": "O que Jeová uniu",
+        "motivo": "Por que escolher: Uma escolha clássica que lembra a presença de Jeová como o \"tríplice cordão\" essencial para o sucesso conjugal."
+      },
+      {
+        "numero": 132,
+        "titulo": "Nós somos um",
+        "motivo": "Por que escolher: Estimula o afeto genuíno e a união inquebrantável entre o casal diante dos desafios da vida imperfeita."
+      }
+    ]
+  },
+  "28": {
+    "tema": "Mostre Respeito e Amor no Seu Casamento",
+    "sugestoes": [
+      {
+        "numero": 131,
+        "titulo": "O que Jeová uniu",
+        "motivo": "Por que escolher: Lembra os cônjuges da responsabilidade solene de honrar seus votos matrimoniais por meio de ações práticas."
+      },
+      {
+        "numero": 109,
+        "titulo": "Mostre amor de coração",
+        "motivo": "Por que escolher: Aplica o princípio do amor abnegado e paciente no trato diário, na fala e no comportamento dentro do lar."
+      }
+    ]
+  },
+  "29": {
+    "tema": "As Responsabilidades e Recompensas de Ter Filhos",
+    "sugestoes": [
+      {
+        "numero": 134,
+        "titulo": "Os filhos são uma herança...",
+        "motivo": "Por que escolher: Destaca que os filhos pertencem a Jeová e que criá-los é uma comissão de confiança dada aos pais."
+      },
+      {
+        "numero": 133,
+        "titulo": "Quero ser um jovem leal",
+        "motivo": "Por que escolher: Encoraja os jovens na assistência a apoiar seus pais e a escolher servir ao Criador desde a juventude."
+      }
+    ]
+  },
+  "30": {
+    "tema": "Como Melhorar a Comunicação na Família",
+    "sugestoes": [
+      {
+        "numero": 109,
+        "titulo": "Mostre amor de coração",
+        "motivo": "Por que escolher: Ajuda a abrandar o temperamento, destacando que o amor é paciente, bondoso e ouve com atenção."
+      },
+      {
+        "numero": 36,
+        "titulo": "Proteja o coração",
+        "motivo": "Por que escolher: Salienta a importância de vigiar nossas palavras e pensamentos (Provérbios 4:23) para evitar falas que ferem."
+      }
+    ]
+  },
+  "31": {
+    "tema": "Você Tem Consciência da Sua Necessidade Espiritual?",
+    "sugestoes": [
+      {
+        "numero": 88,
+        "titulo": "Os teus caminhos quero entender",
+        "motivo": "Por que escolher: Prepara a mente para o estudo pessoal e das reuniões como a forma de satisfazer nossa fome espiritual."
+      },
+      {
+        "numero": 86,
+        "titulo": "As reuniões são o nosso lugar",
+        "motivo": "Por que escolher: Exalta o valor das reuniões congregacionais como o banquete espiritual de águas puras provido por Jeová."
+      }
+    ]
+  },
+  "32": {
+    "tema": "Como Lidar com as Ansiedades da Vida",
+    "sugestoes": [
+      {
+        "numero": 3,
+        "titulo": "Jeová, minha força e esperança",
+        "motivo": "Por que escolher: Uma prece em forma de música para quando os problemas parecem difíceis demais de aguentar sozinhos."
+      },
+      {
+        "numero": 4,
+        "titulo": "‘Jeová é o meu Pastor’",
+        "motivo": "Por que escolher: Transmite tranquilidade ao lembrar que Jeová conhece nossas necessidades e nos dá descanso e paz."
+      }
+    ]
+  },
+  "33": {
+    "tema": "Quando Vai Existir Verdadeira Justiça?",
+    "sugestoes": [
+      {
+        "numero": 9,
+        "titulo": "Jeová é nosso Rei!",
+        "motivo": "Por que escolher: Exalta o governo e o julgamento justos de Jeová, que em breve destruirá a opressão e trará a paz real."
+      },
+      {
+        "numero": 22,
+        "titulo": "Que venha o Reino de Deus!",
+        "motivo": "Por que escolher: Concentra as esperanças no Reino como a única e verdadeira solução para as desigualdades do mundo."
+      }
+    ]
+  },
+  "34": {
+    "tema": "Você Vai Ser Marcado para Sobreviver?",
+    "sugestoes": [
+      {
+        "numero": 127,
+        "titulo": "Que tipo de pessoa eu devo ser",
+        "motivo": "Por que escolher: Estimula o autoexame sobre se nossa conduta diária reflete os padrões exigidos para sermos marcados."
+      },
+      {
+        "numero": 34,
+        "titulo": "Andarei em integridade",
+        "motivo": "Por que escolher: Reforça a determinação de se afastar dos pecadores e de andar no caminho da verdade aprovado por Deus."
+      }
+    ]
+  },
+  "35": {
+    "tema": "É Possível Viver para Sempre? O que Você Precisa Fazer?",
+    "sugestoes": [
+      {
+        "numero": 140,
+        "titulo": "Vida eterna, enfim!",
+        "motivo": "Por que escolher: Baseado em João 3:16, ajuda a visualizar a maravilhosa recompensa e nos incentiva a agir para alcançá-la."
+      },
+      {
+        "numero": 147,
+        "titulo": "A vida eterna — que bela promessa!",
+        "motivo": "Por que escolher: Traz alegria e encorajamento ao cantar sobre a esperança de viver sem doenças, choro ou dor na Terra."
+      }
+    ]
+  },
+  "36": {
+    "tema": "Será que a Vida É Só Isso?",
+    "sugestoes": [
+      {
+        "numero": 141,
+        "titulo": "O milagre da vida",
+        "motivo": "Por que escolher: Lembra-nos de que a vida é uma dádiva divina maravilhosa que deve ser usada com gratidão e de forma sábia."
+      },
+      {
+        "numero": 140,
+        "titulo": "Vida eterna, enfim!",
+        "motivo": "Por que escolher: Consola os aflitos por contrapor a vida curta atual com a promessa de vida eterna, jovem e feliz no Paraíso."
+      }
+    ]
+  },
+  "37": {
+    "tema": "Obedecer a Deus É Mesmo a Melhor Coisa a Fazer?",
+    "sugestoes": [
+      {
+        "numero": 89,
+        "titulo": "Escute, obedeça e seja abençoado",
+        "motivo": "Por que escolher: Demonstra de forma simples que a obediência sincera e constante nos protege das tempestades morais."
+      },
+      {
+        "numero": 56,
+        "titulo": "Faça da verdade a sua vida",
+        "motivo": "Por que escolher: Reafirma que andar na verdade e obedecer a Jeová é o melhor e mais recompensador estilo de vida."
+      }
+    ]
+  },
+  "38": {
+    "tema": "Como Você Pode Sobreviver ao Fim do Mundo?",
+    "sugestoes": [
+      {
+        "numero": 150,
+        "titulo": "Busquem a Deus para...",
+        "motivo": "Por que escolher: Inspirado em Sofonias 2:3, lembra que devemos buscar a justiça e a mansidão ativamente para sermos escondidos."
+      },
+      {
+        "numero": 119,
+        "titulo": "Temos que ter fé",
+        "motivo": "Por que escolher: Destaca que a sobrevivência requer uma fé demonstrada por meio do cumprimento leal da obra de pregação."
+      }
+    ]
+  },
+  "39": {
+    "tema": "Jesus Cristo Vence o Mundo — Como e Quando?",
+    "sugestoes": [
+      {
+        "numero": 15,
+        "titulo": "Louve o Filho de Jeová!",
+        "motivo": "Por que escolher: Exalta o papel de Jesus como o Rei vencedor que derrotará Satanás e glorificará a soberania de Deus."
+      },
+      {
+        "numero": 71,
+        "titulo": "Marchamos com Jeová",
+        "motivo": "Por que escolher: Motiva a congregação a marchar sob a liderança corajosa de Cristo Jesus sem temer a oposição do mundo."
+      }
+    ]
+  },
+  "40": {
+    "tema": "O que Vai Acontecer em Breve?",
+    "sugestoes": [
+      {
+        "numero": 143,
+        "titulo": "Continue ativo e desperto!",
+        "motivo": "Por que escolher: Harmoniza-se com Sofonias 2:2, 3, estimulando a urgência espiritual e a prontidão para o que virá."
+      },
+      {
+        "numero": 10,
+        "titulo": "A Jeová vou agradecer!",
+        "motivo": "Por que escolher: Lembra que o dia de Deus está muito próximo e nos move a proclamar e agradecer com zelo pelas bênçãos futuras."
+      }
+    ]
+  },
+  "44": {
+    "tema": "Como os Ensinos de Jesus Podem Ajudar Você?",
+    "sugestoes": [
+      {
+        "numero": 89,
+        "titulo": "Escute, obedeça e seja abençoado",
+        "motivo": "Por que escolher: Liga-se de forma direta à conclusão ilustrada do Sermão do Monte sobre construir na rocha sólida."
+      },
+      {
+        "numero": 13,
+        "titulo": "Cristo, o nosso exemplo",
+        "motivo": "Por que escolher: Inspira a assistência a seguir o estilo de vida, o ensino amoroso e a conduta leal de Jesus."
+      }
+    ]
+  },
+  "46": {
+    "tema": "Fortaleça Sua Confiança em Jeová",
+    "sugestoes": [
+      {
+        "numero": 3,
+        "titulo": "Jeová, minha força e esperança",
+        "motivo": "Por que escolher: Uma oração musicalizada que gera forte determinação de confiar em Deus mesmo diante de provações graves."
+      },
+      {
+        "numero": 126,
+        "titulo": "Sempre fortes, firmes...",
+        "motivo": "Por que escolher: Enfatiza Hebreus 3 e 4 sobre a necessidade de estarmos atentos às orientações de Cristo para entrar no descanso de Deus."
+      }
+    ]
+  },
+  "48": {
+    "tema": "Seja Leal a Deus Mesmo Quando For Testado",
+    "sugestoes": [
+      {
+        "numero": 124,
+        "titulo": "Sempre leais",
+        "motivo": "Por que escolher: Uma belíssima exaltação à lealdade, motivando os irmãos a permanecerem firmes ao lado de Jeová sob qualquer teste."
+      },
+      {
+        "numero": 55,
+        "titulo": "Nada temam, meus amados!",
+        "motivo": "Por que escolher: Traz a voz encorajadora de Jeová prometendo dar forças e proteger pessoalmente cada servo que for leal."
+      }
+    ]
+  },
+  "53": {
+    "tema": "Você Pensa Como Deus?",
+    "sugestoes": [
+      {
+        "numero": 45,
+        "titulo": "Os pensamentos do meu coração",
+        "motivo": "Por que escolher: Baseado no Salmo 19:14, expressa o desejo de meditar dia e noite nas leis puras e superiores de Jeová."
+      },
+      {
+        "numero": 88,
+        "titulo": "Os teus caminhos quero entender",
+        "motivo": "Por que escolher: Ajuda os ouvintes a buscarem ativamente os conselhos divinos para fazer os ajustes morais necessários."
+      }
+    ]
+  },
+  "55": {
+    "tema": "Você Está Fazendo um Bom Nome Perante Deus?",
+    "sugestoes": [
+      {
+        "numero": 39,
+        "titulo": "Um bom nome",
+        "motivo": "Por que escolher: Inspirado em Eclesiastes 7:1, explica que a fama do mundo é ilusão e que o verdadeiro valor está na memória de Deus."
+      },
+      {
+        "numero": 127,
+        "titulo": "Que tipo de pessoa eu devo ser",
+        "motivo": "Por que escolher: Enfatiza a conduta santa diária que nos ajuda a angariar e proteger uma boa reputação espiritual."
+      }
+    ]
+  },
+  "60": {
+    "tema": "Você Tem um Objetivo na Vida?",
+    "sugestoes": [
+      {
+        "numero": 31,
+        "titulo": "Ande com Deus",
+        "motivo": "Por que escolher: Mostra que dedicar a vida a agradar a Deus é o único objetivo que traz verdadeira felicidade e significado."
+      },
+      {
+        "numero": 127,
+        "titulo": "Que tipo de pessoa eu devo ser",
+        "motivo": "Por que escolher: Ajuda no autoexame sobre os nossos reais desejos e prioridades (estilo de vida físico versus espiritual)."
+      }
+    ]
+  },
+  "63": {
+    "tema": "É Possível Encontrar a Verdade?",
+    "sugestoes": [
+      {
+        "numero": 96,
+        "titulo": "O livro de Deus é um tesouro",
+        "motivo": "Por que escolher: Celebra a Bíblia como o livro inspirado que fornece as respostas seguras sobre a nossa origem e futuro."
+      },
+      {
+        "numero": 54,
+        "titulo": "‘Este é o caminho’",
+        "motivo": "Por que escolher: Destaca a paz reconfortante que sentimos quando encontramos e decidimos andar na estrada da verdade bíblica."
+      }
+    ]
+  },
+  "66": {
+    "tema": "Você Também Vai Participar na Colheita?",
+    "sugestoes": [
+      {
+        "numero": 64,
+        "titulo": "Participamos com alegria...",
+        "motivo": "Por que escolher: Baseado diretamente em Mateus 9:35-38, convida os publicadores a trabalharem com zelo na urgente colheita mundial."
+      },
+      {
+        "numero": 84,
+        "titulo": "Vamos fazer nosso melhor",
+        "motivo": "Por que escolher: Estimula a disposição e o espírito voluntário de servir onde a necessidade for maior na obra de pregação."
+      }
+    ]
+  },
+  "68": {
+    "tema": "‘Continuem a Perdoar uns aos Outros Liberalmente’",
+    "sugestoes": [
+      {
+        "numero": 130,
+        "titulo": "Vamos perdoar uns aos outros",
+        "motivo": "Por que escolher: Harmoniza-se perfeitamente com Colossenses 3:13, instando a congregação a perdoar livremente de coração."
+      },
+      {
+        "numero": 125,
+        "titulo": "‘Felizes os misericordiosos’",
+        "motivo": "Por que escolher: Exalta os benefícios físicos, emocionais e espirituais de ser compassivo e evitar rancores destrutivos."
+      }
+    ]
+  },
+  "71": {
+    "tema": "‘Mantenha-se Desperto’ — Por que e Como?",
+    "sugestoes": [
+      {
+        "numero": 143,
+        "titulo": "Continue ativo e desperto!",
+        "motivo": "Por que escolher: Perfeito para frisar a necessidade de estar alerta aos sinais dos tempos e do cumprimento de profecias."
+      },
+      {
+        "numero": 126,
+        "titulo": "Sempre fortes, firmes...",
+        "motivo": "Por que escolher: Incentiva a vigilância espiritual para não cair no sono induzido pelas distrações deste mundo mau."
+      }
+    ]
+  },
+  "75": {
+    "tema": "Mostre que Você Apoia o Direito de Jeová Governar",
+    "sugestoes": [
+      {
+        "numero": 9,
+        "titulo": "Jeová é nosso Rei!",
+        "motivo": "Por que escolher: Exalta o direito absoluto de Jeová de governar o Universo e a nossa alegria de apoiar Seu Reino."
+      },
+      {
+        "numero": 29,
+        "titulo": "Que nossa vida dê honra...",
+        "motivo": "Por que escolher: Baseado em Isaías 43:10, expressa nossa determinação de glorificar a soberania divina por nossa conduta."
+      }
+    ]
+  },
+  "110": {
+    "tema": "Deus Vem Primeiro na Vida Familiar Bem-Sucedida",
+    "sugestoes": [
+      {
+        "numero": 131,
+        "titulo": "O que Jeová uniu",
+        "motivo": "Por que escolher: Lembra à família que o casamento é um arranjo instituído e autorizado por Jeová que deve ser respeitado."
+      },
+      {
+        "numero": 110,
+        "titulo": "A alegria que vem de Jeová",
+        "motivo": "Por que escolher: Motiva a família a dar prioridade à adoração espiritual para encontrar força e alegria no lar."
+      }
+    ]
+  },
+  "127": {
+    "tema": "O que Acontece Quando Morremos?",
+    "sugestoes": [
+      {
+        "numero": 128,
+        "titulo": "Persevere até o fim",
+        "motivo": "Por que escolher: Fortalece a determinação de perseverar com fé e esperança, mesmo quando enfrentamos a perda de pessoas amadas."
+      },
+      {
+        "numero": 151,
+        "titulo": "Ele chamará",
+        "motivo": "Por que escolher: Um dos cânticos mais emocionantes do cancioneiro (Jó 14:13-15), que expressa o desejo de Deus de ressuscitar os mortos."
+      }
+    ]
+  },
+  "131": {
+    "tema": "Tome Posição Contra o Diabo!",
+    "sugestoes": [
+      {
+        "numero": 115,
+        "titulo": "Não caia nas armadilhas de Satanás",
+        "motivo": "Por que escolher: Explica as táticas sutis do Diabo e como a armadura espiritual nos protege dessas armadilhas."
+      },
+      {
+        "numero": 73,
+        "titulo": "Dá-nos coragem",
+        "motivo": "Por que escolher: Pede poder a Jeová para persistir na pregação e na integridade, sem temer a oposição satânica."
+      }
+    ]
+  },
+  "142": {
+    "tema": "Por que Refugiar-se em Jeová",
+    "sugestoes": [
+      {
+        "numero": 8,
+        "titulo": "Jeová é um refúgio",
+        "motivo": "Por que escolher: Enfatiza que o refúgio seguro em tempos difíceis não é material ou humano, mas puramente espiritual."
+      },
+      {
+        "numero": 30,
+        "titulo": "Meu Deus, meu Amigo e Pai",
+        "motivo": "Por que escolher: Ajuda o recém-interessado a encontrar consolo, amizade e acolhimento seguro nos braços leais de Jeová."
+      }
+    ]
+  },
+  "143": {
+    "tema": "Confie no Deus de Todo Consolo",
+    "sugestoes": [
+      {
+        "numero": 3,
+        "titulo": "Jeová, minha força e esperança",
+        "motivo": "Por que escolher: Uma oração cantada muito eficaz para momentos de aflição, lembrando como Jeová nos sustenta e anima."
+      },
+      {
+        "numero": 105,
+        "titulo": "‘Deus é amor’",
+        "motivo": "Por que escolher: Prepara a mente para focar na terna misericórdia de Jeová e no consolo incomparável provido pelo resgate."
+      }
+    ]
+  },
+  "189": {
+    "tema": "Ande com Deus e Receba Bênçãos para Sempre",
+    "sugestoes": [
+      {
+        "numero": 31,
+        "titulo": "Ande com Deus",
+        "motivo": "Por que escolher: Conecta-se diretamente com o tema do discurso, mostrando que o andar com Deus é um estilo de vida contínuo."
+      },
+      {
+        "numero": 48,
+        "titulo": "Caminhamos sempre com Jeová",
+        "motivo": "Por que escolher: Baseado em Miqueias 6:8, exprime a nossa determinação leal de caminhar diariamente de mãos dadas com nosso Pai."
+      }
+    ]
+  }
+}
