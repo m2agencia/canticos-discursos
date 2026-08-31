@@ -2,49 +2,91 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cânticos App</title>
-    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cânticos para Discursos Públicos</title>
+    
+    <!-- PWA Tags -->
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4a90e2">
-    <link rel="icon" href="/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.png"> <!-- Opcional, se tiver um png -->
+
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: #4a90e2; }
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f0f2f5; 
+            margin: 0; 
+            padding: 15px; 
+            color: #333; 
+        }
+        .container { 
+            max-width: 650px; 
+            width: 100%;
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 25px 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: #4a90e2; 
+            line-height: 1.2; 
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+        .subtitle {
+            text-align: center; 
+            margin-bottom: 25px; 
+            font-size: 0.9em; 
+            color: #666;
+        }
         .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
-        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; }
-        button { padding: 12px 24px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%;}
+        button { padding: 12px 20px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
         button:hover { background-color: #357abd; }
-        .loader { display: none; text-align: center; margin: 20px 0; color: #666; font-style: italic; }
-        .result { margin-top: 20px; line-height: 1.6; }
-        .tema-box { background: #eef5fc; padding: 15px; border-radius: 8px; font-weight: bold; margin-bottom: 20px; border-left: 4px solid #4a90e2; }
-        .song-box { background: #fafafa; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
-        .song-title { font-weight: bold; font-size: 1.1em; color: #2c3e50; margin-bottom: 5px; }
-        .song-reason { color: #555; }
+        .result { margin-top: 20px; line-height: 1.5; }
+        .tema-box { background: #eef5fc; padding: 15px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #4a90e2; }
+        .tema-titulo { font-weight: bold; font-size: 1.1em; margin-bottom: 12px; color: #1a5276;}
+        .tema-resumo { font-size: 0.95em; color: #444; line-height: 1.5; }
+        .song-box { background: #fff; border: 1px solid #e1e8ed; padding: 15px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);}
+        .song-title { font-weight: bold; font-size: 1.05em; color: #2c3e50; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        .song-reason { color: #555; font-size: 0.9em; line-height: 1.5; }
+        .reason-bold { font-weight: bold; color: #e67e22; }
+        
+        @media (max-width: 400px) {
+            h1 { font-size: 1.5em; }
+            .container { padding: 20px 15px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Buscador de Cânticos (Offline)</h1>
-        <p style="text-align:center;">Digite o número do discurso para ver as opções gravadas.</p>
+        <h1>Cânticos para Discursos<br><span style="font-size: 0.6em; color: #555; display: block; margin-top: 5px;">Guia Prático para escolha</span></h1>
         <div class="input-group">
-            <input type="number" id="numero" placeholder="Ex: 42">
+            <input type="number" id="numero" placeholder="Ex: 1, 18, 44...">
             <button onclick="buscar()">Buscar</button>
         </div>
         <div class="result" id="result"></div>
     </div>
 
     <script>
+        // Registrar Service Worker para PWA
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(() => console.log('Service Worker Registrado'))
-                .catch(err => console.error('Erro no SW:', err));
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(reg => {
+                    console.log('Service Worker registrado com sucesso!', reg.scope);
+                }).catch(err => {
+                    console.warn('Falha no registro do Service Worker', err);
+                });
+            });
         }
 
+        const cacheBuster = new Date().getTime();
         let db = null;
 
-        // Carrega o banco de dados localmente ao abrir a página
-        fetch('/db_canticos.json')
+        fetch('db_canticos.json?v=' + cacheBuster)
             .then(res => res.json())
             .then(data => { db = data; })
             .catch(err => console.error('Erro ao carregar banco:', err));
@@ -54,24 +96,33 @@
             const resultDiv = document.getElementById('result');
 
             if (!num) return alert('Digite um número.');
-            if (!db) return alert('Banco de dados ainda carregando... tente novamente em 1 segundo.');
+            if (!db) return alert('Banco de dados carregando... Aguarde.');
 
             resultDiv.innerHTML = '';
-
             const discurso = db[num];
 
             if (!discurso) {
-                resultDiv.innerHTML = `<p style="color:red;">Erro: Discurso ${num} não encontrado no banco de dados gravado.</p>`;
+                resultDiv.innerHTML = `<p style="color:red; text-align:center;">Erro: Discurso ${num} não encontrado no banco.</p>`;
                 return;
             }
 
-            let html = `<div class="tema-box">Tema do Discurso:<br> ${discurso.tema}</div><h3>Opções de Cânticos:</h3>`;
+            let html = `
+            <div class="tema-box">
+                <div class="tema-titulo">TEMA: ${discurso.tema.toUpperCase()}</div>
+                <div class="tema-resumo"><strong>Resumo do Esboço:</strong> ${discurso.resumo}</div>
+            </div>
+            <h3 style="color: #4a90e2; font-size: 1.1em;">3 Excelentes Sugestões:</h3>`;
             
             discurso.sugestoes.forEach((song, index) => {
+                let motivoTexto = song.motivo;
+                if(motivoTexto.includes("Por que escolher")) {
+                    motivoTexto = motivoTexto.replace("Por que escolher", "<span class='reason-bold'>Por que escolher</span>");
+                }
+
                 html += `
                 <div class="song-box">
-                    <div class="song-title">Opção ${index + 1}: Cântico ${song.numero} - ${song.titulo}</div>
-                    <div class="song-reason">${song.motivo}</div>
+                    <div class="song-title">${index + 1}. Cântico ${song.numero}: "${song.titulo}"</div>
+                    <div class="song-reason">${motivoTexto}</div>
                 </div>`;
             });
 
