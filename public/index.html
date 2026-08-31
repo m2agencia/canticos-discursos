@@ -42,7 +42,13 @@
             font-size: 0.9em; 
             color: #666;
         }
-        .input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        .input-label {
+            font-size: 0.95em;
+            color: #444;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .input-group { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
         input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%;}
         button { padding: 12px 20px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
         button:hover { background-color: #357abd; }
@@ -65,7 +71,8 @@
     <div class="container">
         <h1>Cânticos para Discursos<br><span style="font-size: 0.6em; color: #555; display: block; margin-top: 5px;">Guia Prático para escolha</span></h1>
         <div class="input-group">
-            <input type="number" id="numero" placeholder="Ex: 1, 18, 44...">
+            <label for="numero" class="input-label">Digite o número do Discurso:</label>
+            <input type="number" id="numero" placeholder="Ex: 1, 37, 102">
             <button onclick="buscar()">Buscar</button>
         </div>
         <div class="result" id="result"></div>
