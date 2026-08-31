@@ -15,82 +15,131 @@
         * { box-sizing: border-box; }
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f0f2f5; 
+            background-color: #e8ecf1; 
             margin: 0; 
             padding: 15px; 
             color: #333; 
         }
-        .container { 
+        .page { 
             max-width: 650px; 
             width: 100%;
             margin: 0 auto; 
-            background: #fff; 
-            padding: 25px 20px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
         }
-        h1 { 
-            text-align: center; 
-            color: #4a90e2; 
-            line-height: 1.2; 
-            margin-bottom: 5px;
+
+        /* Card base */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        /* Card 1 - Cabeçalho */
+        .card-header {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: #fff;
+            text-align: center;
+            padding: 28px 20px;
+        }
+        .card-header h1 {
+            margin: 0;
             font-size: 1.8em;
+            line-height: 1.2;
         }
-        .subtitle {
-            text-align: center; 
-            margin-bottom: 25px; 
-            font-size: 0.9em; 
-            color: #666;
+        .card-header .subtitle {
+            margin-top: 6px;
+            font-size: 0.95em;
+            opacity: 0.85;
         }
-        .search-card {
-            background: #f8fafc;
-            border: 1px solid #e1e8ed;
-            border-radius: 10px;
+
+        /* Card 2 - Busca */
+        .card-search {
             padding: 20px;
-            margin-bottom: 20px;
         }
-        .search-card label {
+        .card-search label {
             display: block;
             text-align: center;
             font-size: 1em;
-            color: #444;
+            color: #333;
             font-weight: 600;
             margin-bottom: 12px;
         }
-        .search-card label span {
-            color: #999;
+        .card-search label span {
+            color: #888;
             font-weight: normal;
             font-size: 0.9em;
         }
         .input-group { display: flex; gap: 10px; }
-        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%; background: #fff;}
-        button { padding: 12px 20px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
+        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%; background: #fff; }
+        input:focus { outline: none; border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74,144,226,0.15); }
+        button { padding: 12px 24px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
         button:hover { background-color: #357abd; }
-        .result { margin-top: 20px; line-height: 1.5; }
-        .tema-box { background: #eef5fc; padding: 15px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #4a90e2; }
-        .tema-titulo { font-weight: bold; font-size: 1.1em; margin-bottom: 12px; color: #1a5276;}
-        .tema-resumo { font-size: 0.95em; color: #444; line-height: 1.5; }
-        .song-box { background: #fff; border: 1px solid #e1e8ed; padding: 15px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);}
-        .song-title { font-weight: bold; font-size: 1.05em; color: #2c3e50; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        .song-reason { color: #555; font-size: 0.9em; line-height: 1.5; }
+
+        /* Card 3 - Tema/Resumo */
+        .card-tema {
+            padding: 20px;
+            border-left: 5px solid #4a90e2;
+        }
+        .tema-titulo { 
+            font-weight: bold; 
+            font-size: 1.1em; 
+            margin-bottom: 12px; 
+            color: #1a5276;
+            text-transform: uppercase;
+        }
+        .tema-resumo { font-size: 0.95em; color: #444; line-height: 1.6; }
+
+        /* Subtítulo sugestões */
+        .sugestoes-titulo {
+            color: #4a90e2;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 0;
+            padding: 0 4px;
+        }
+
+        /* Cards individuais - Cânticos */
+        .card-cantico {
+            padding: 18px 20px;
+        }
+        .song-title { 
+            font-weight: bold; 
+            font-size: 1.05em; 
+            color: #2c3e50; 
+            margin-bottom: 10px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 10px; 
+        }
+        .song-reason { color: #555; font-size: 0.9em; line-height: 1.6; }
         .reason-bold { font-weight: bold; color: #e67e22; }
         
+        .result { margin-top: 0; }
+
         @media (max-width: 400px) {
-            h1 { font-size: 1.5em; }
-            .container { padding: 20px 15px; }
+            .card-header h1 { font-size: 1.5em; }
+            .card-header { padding: 22px 15px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Cânticos para Discursos<br><span style="font-size: 0.6em; color: #555; display: block; margin-top: 5px;">Guia Prático para escolha</span></h1>
-        <div class="search-card">
+    <div class="page">
+        <!-- Card 1: Cabeçalho -->
+        <div class="card card-header">
+            <h1>Cânticos para Discursos</h1>
+            <div class="subtitle">Guia Prático para escolha</div>
+        </div>
+
+        <!-- Card 2: Busca -->
+        <div class="card card-search">
             <label for="numero">Digite o número do Discurso: <span>[ Ex: 1, 37, 102 ]</span></label>
             <div class="input-group">
                 <input type="number" id="numero" placeholder="Ex: 1, 37, 102">
                 <button onclick="buscar()">Buscar</button>
             </div>
         </div>
+
+        <!-- Resultados -->
         <div class="result" id="result"></div>
     </div>
 
@@ -125,17 +174,23 @@
             const discurso = db[num];
 
             if (!discurso) {
-                resultDiv.innerHTML = `<p style="color:red; text-align:center;">Erro: Discurso ${num} não encontrado no banco.</p>`;
+                resultDiv.innerHTML = `<div class="card" style="padding:20px;"><p style="color:red; text-align:center; margin:0;">Erro: Discurso ${num} não encontrado no banco.</p></div>`;
                 return;
             }
 
-            let html = `
-            <div class="tema-box">
+            let html = '';
+
+            // Card 3: Tema + Resumo
+            html += `
+            <div class="card card-tema">
                 <div class="tema-titulo">TEMA: ${discurso.tema.toUpperCase()}</div>
                 <div class="tema-resumo"><strong>Resumo do Esboço:</strong> ${discurso.resumo}</div>
-            </div>
-            <h3 style="color: #4a90e2; font-size: 1.1em;">3 Excelentes Sugestões:</h3>`;
-            
+            </div>`;
+
+            // Subtítulo
+            html += `<h3 class="sugestoes-titulo">3 Excelentes Sugestões:</h3>`;
+
+            // Cards individuais para cada cântico
             discurso.sugestoes.forEach((song, index) => {
                 let motivoTexto = song.motivo;
                 if(motivoTexto.includes("Por que escolher")) {
@@ -143,7 +198,7 @@
                 }
 
                 html += `
-                <div class="song-box">
+                <div class="card card-cantico">
                     <div class="song-title">${index + 1}. Cântico ${song.numero}: "${song.titulo}"</div>
                     <div class="song-reason">${motivoTexto}</div>
                 </div>`;
