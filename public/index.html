@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4a90e2">
     <link rel="icon" type="image/svg+xml" href="icon.svg">
-    <link rel="apple-touch-icon" href="icon.png"> <!-- Opcional, se tiver um png -->
+    <link rel="apple-touch-icon" href="icon.png">
 
     <style>
         * { box-sizing: border-box; }
@@ -42,14 +42,28 @@
             font-size: 0.9em; 
             color: #666;
         }
-        .input-label {
-            font-size: 0.95em;
-            color: #444;
-            font-weight: 500;
-            white-space: nowrap;
+        .search-card {
+            background: #f8fafc;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
-        .input-group { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%;}
+        .search-card label {
+            display: block;
+            text-align: center;
+            font-size: 1em;
+            color: #444;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .search-card label span {
+            color: #999;
+            font-weight: normal;
+            font-size: 0.9em;
+        }
+        .input-group { display: flex; gap: 10px; }
+        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%; background: #fff;}
         button { padding: 12px 20px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
         button:hover { background-color: #357abd; }
         .result { margin-top: 20px; line-height: 1.5; }
@@ -70,10 +84,12 @@
 <body>
     <div class="container">
         <h1>Cânticos para Discursos<br><span style="font-size: 0.6em; color: #555; display: block; margin-top: 5px;">Guia Prático para escolha</span></h1>
-        <div class="input-group">
-            <label for="numero" class="input-label">Digite o número do Discurso:</label>
-            <input type="number" id="numero" placeholder="Ex: 1, 37, 102">
-            <button onclick="buscar()">Buscar</button>
+        <div class="search-card">
+            <label for="numero">Digite o número do Discurso: <span>[ Ex: 1, 37, 102 ]</span></label>
+            <div class="input-group">
+                <input type="number" id="numero" placeholder="Ex: 1, 37, 102">
+                <button onclick="buscar()">Buscar</button>
+            </div>
         </div>
         <div class="result" id="result"></div>
     </div>
