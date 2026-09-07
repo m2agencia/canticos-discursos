@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Cânticos para Discursos Públicos</title>
-    
+
     <!-- PWA Tags -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4a90e2">
@@ -12,25 +13,29 @@
     <link rel="apple-touch-icon" href="icon.png">
 
     <style>
-        * { box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #e8ecf1; 
-            margin: 0; 
-            padding: 15px; 
-            color: #333; 
+        * {
+            box-sizing: border-box;
         }
-        .page { 
-            max-width: 650px; 
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8ecf1;
+            margin: 0;
+            padding: 15px;
+            color: #333;
+        }
+
+        .page {
+            max-width: 650px;
             width: 100%;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
 
         /* Card base */
         .card {
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             margin-bottom: 16px;
             overflow: hidden;
         }
@@ -42,11 +47,13 @@
             text-align: center;
             padding: 28px 20px;
         }
+
         .card-header h1 {
             margin: 0;
             font-size: 1.8em;
             line-height: 1.2;
         }
+
         .card-header .subtitle {
             margin-top: 6px;
             font-size: 0.95em;
@@ -57,6 +64,7 @@
         .card-search {
             padding: 20px;
         }
+
         .card-search label {
             display: block;
             text-align: center;
@@ -65,30 +73,69 @@
             font-weight: 600;
             margin-bottom: 12px;
         }
+
         .card-search label span {
             color: #888;
             font-weight: normal;
             font-size: 0.9em;
         }
-        .input-group { display: flex; gap: 10px; }
-        input { flex: 1; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; width: 100%; background: #fff; }
-        input:focus { outline: none; border-color: #4a90e2; box-shadow: 0 0 0 3px rgba(74,144,226,0.15); }
-        button { padding: 12px 24px; font-size: 16px; background-color: #4a90e2; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; font-weight: bold; }
-        button:hover { background-color: #357abd; }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 100%;
+            background: #fff;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #357abd;
+        }
 
         /* Card 3 - Tema/Resumo */
         .card-tema {
             padding: 20px;
             border-left: 5px solid #4a90e2;
         }
-        .tema-titulo { 
-            font-weight: bold; 
-            font-size: 1.1em; 
-            margin-bottom: 12px; 
+
+        .tema-titulo {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 12px;
             color: #1a5276;
             text-transform: uppercase;
         }
-        .tema-resumo { font-size: 0.95em; color: #444; line-height: 1.6; }
+
+        .tema-resumo {
+            font-size: 0.95em;
+            color: #444;
+            line-height: 1.6;
+        }
 
         /* Subtítulo sugestões */
         .sugestoes-titulo {
@@ -103,25 +150,43 @@
         .card-cantico {
             padding: 18px 20px;
         }
-        .song-title { 
-            font-weight: bold; 
-            font-size: 1.05em; 
-            color: #2c3e50; 
-            margin-bottom: 10px; 
-            border-bottom: 1px solid #eee; 
-            padding-bottom: 10px; 
+
+        .song-title {
+            font-weight: bold;
+            font-size: 1.05em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
         }
-        .song-reason { color: #555; font-size: 0.9em; line-height: 1.6; }
-        .reason-bold { font-weight: bold; color: #e67e22; }
-        
-        .result { margin-top: 0; }
+
+        .song-reason {
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .reason-bold {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .result {
+            margin-top: 0;
+        }
 
         @media (max-width: 400px) {
-            .card-header h1 { font-size: 1.5em; }
-            .card-header { padding: 22px 15px; }
+            .card-header h1 {
+                font-size: 1.5em;
+            }
+
+            .card-header {
+                padding: 22px 15px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="page">
         <!-- Card 1: Cabeçalho -->
@@ -132,7 +197,7 @@
 
         <!-- Card 2: Busca -->
         <div class="card card-search">
-            <label for="numero">Digite o número do Discurso: <span>Ex: 1, 37, 102</span></label>
+            <label for="numero">Digite o número do Discurso: <span></span></label>
             <div class="input-group">
                 <input type="number" id="numero" placeholder="Ex: 1, 37, 102">
                 <button onclick="buscar()">Buscar</button>
@@ -192,18 +257,18 @@
                 html += `
                 <div class="card card-cantico">
                     <div class="song-title">${index + 1}. Cântico ${song.numero}: "${song.titulo}"</div>`;
-                    
+
                 const t1 = song.resumo_cantico ? song.resumo_cantico.trim() : '';
                 const t2 = song.motivo ? song.motivo.trim() : '';
                 const combinedText = [t1, t2].filter(t => t !== '').join(' ');
-                
+
                 if (combinedText !== '') {
                     html += `
                     <div class="song-reason">
                         <span class="reason-bold">Resumo:</span> ${combinedText}
                     </div>`;
                 }
-                
+
                 html += `</div>`;
             });
 
@@ -211,4 +276,5 @@
         }
     </script>
 </body>
+
 </html>
